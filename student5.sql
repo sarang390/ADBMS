@@ -27,3 +27,8 @@ update details set age="23" where id=8;
 update details set age="24" where id=9;
 update details set age="25" where id=10;
 alter table details add constraint test check(age>=21);
+select * from stud_details;
+delete from details where age=22;
+commit;
+select * from details;
+rollback;
